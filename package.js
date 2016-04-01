@@ -1,8 +1,8 @@
 Package.describe({
   summary: "A package that provides a blog at /blog",
   version: "0.8.5",
-  name: "ryw:blog",
-  git: "https://github.com/meteor-blog/meteor-blog.git"
+  name: "rcdelfin:blog",
+  git: "https://github.com/rcdelfin/meteor-blog.git"
 });
 
 Package.onUse(function(api) {
