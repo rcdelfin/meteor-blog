@@ -96,6 +96,8 @@ Package.onUse(function(api) {
     'client/views/blog/blog.coffee',
     'client/views/widget/latest.html',
     'client/views/widget/latest.coffee',
+    'client/views/widget/tagged-posts.html',
+    'client/views/widget/tagged-posts.coffee',
     'client/views/widget/tags.html',
     'client/views/widget/tags.coffee'
   ], 'client');

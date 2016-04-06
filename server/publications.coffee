@@ -57,6 +57,8 @@ Meteor.publish 'blog.authors', ->
       username: 1
       emails: 1
 
+Meteor.publish 'blog.tags', ->
+  Blog.Tag.find({}, {})
 
 #
 # Admin Publications

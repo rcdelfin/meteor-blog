@@ -1,18 +1,12 @@
 <template name="blogTagList">
-  <div class="meteor-blog-tag-list">
-    <div class="meteor-blog-tag-list-heading">
-      <span>Featured Posts</span>
-    </div>
-    <ul class="meteor-blog-tag-list-posts">
+  <div class="meteor-blog-tags">
+    <ul class="meteor-blog-tags-posts">
       {{#if Template.subscriptionsReady}}
-        {{#each tagList}}
-          <li class="meteor-blog-tag-list-post">
-            <a href="{{blogPathFor 'blogShow'}}">
-              <div class="meteor-blog-tag-list-post-title">
-                {{{title}}}
-              </div>
-              <div class="meteor-blog-tag-list-post-date">
-                <time datetime="{{publishedAt}}">{{date publishedAt}}</time>
+        {{#each tagged}}
+          <li class="meteor-blog-tags-list-post">
+            <a href="/blog/tag/{{tag}}">
+              <div class="meteor-blog-tags-list-post-title">
+                {{tag}}
               </div>
             </a>
           </li>
@@ -21,6 +15,5 @@
         <li>Loading...</li>
       {{/if}}
     </ul>
-    <a href="{{blogPathFor 'blogIndex'}}">View all posts&nbsp; &rsaquo;</a>
   </div>
 </template>

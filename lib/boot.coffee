@@ -41,7 +41,7 @@ if Meteor.isClient
     title: ''
     blogIndexTemplate: null
     blogShowTemplate: null
-    blogTagListTemplates: null
+    blogTaggedPostTemplates: null
     blogNotFoundTemplate: null
     blogAdminTemplate: null
     blogAdminEditTemplate: null
