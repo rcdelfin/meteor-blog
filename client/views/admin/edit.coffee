@@ -4,9 +4,9 @@
 
 getBlogTags = (tags) ->
   if typeof tags is 'string'
-    []
-  else
     tags
+  else
+    []
 
 
 # Reads image dimensions and takes a callback callback passes params (width,

@@ -15,8 +15,6 @@ Template.blogLatest.helpers
       moment(date).format('MMMM Do, YYYY')
 
 
-
-
 # Provide data to custom templates, if any
 Meteor.startup ->
   if Blog.settings.blogLatestTemplate
@@ -25,6 +23,3 @@ Meteor.startup ->
     Template[customLatest].helpers
       latest: Template.blogLatest.__helpers.get('latest')
       date: Template.blogLatest.__helpers.get('date')
-
-
-  

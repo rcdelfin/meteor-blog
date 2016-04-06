@@ -35,6 +35,17 @@ Meteor.publish 'blog.taggedPosts', (tag) ->
     fields: body: 0
     sort: publishedAt: -1
 
+Meteor.publish 'blog.limitedTaggedPosts', (params) ->
+  if not params.limit? then return @ready()
+
+  Blog.Post.find
+    mode: 'public'
+    tags: params.tag
+  ,
+    fields: body: 0
+    sort: publishedAt: -1
+    limit: params.limit
+
 Meteor.publish 'blog.authors', ->
   ids = _.uniq(_.pluck(Blog.Post.all(fields: userId: 1), 'userId'))
 

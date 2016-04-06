@@ -95,7 +95,9 @@ Package.onUse(function(api) {
     'client/views/blog/show.html',
     'client/views/blog/blog.coffee',
     'client/views/widget/latest.html',
-    'client/views/widget/latest.coffee'
+    'client/views/widget/latest.coffee',
+    'client/views/widget/tags.html',
+    'client/views/widget/tags.coffee'
   ], 'client');
 
   // STATIC ASSETS FOR CLIENT
